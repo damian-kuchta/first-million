@@ -1,0 +1,28 @@
+aside.active {
+    animation: showFormImg 1s;
+}
+aside.submit-hover {
+    transform: translateX(50%);
+    transition: 1s;
+}
+.form-img {
+    width: 50%;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+@keyframes showFormImg {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

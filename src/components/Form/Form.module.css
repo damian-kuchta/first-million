@@ -1,0 +1,43 @@
+.user-data-wrap {
+  width: 30%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+}
+
+.form__btn {
+  margin-top: 10px;
+  align-self: flex-end;
+}
+
+.form.active {
+  animation: showForm 1s;
+}
+
+@keyframes showForm {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  50% {
+       opacity: 1;
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+@media (max-width: 1050px) {
+  .user-data-wrap {
+    width: 33%;
+  }
+}
+
+@media (max-width: 810px) {
+  .user-data-wrap {
+    width: 280px;
+  }
+}

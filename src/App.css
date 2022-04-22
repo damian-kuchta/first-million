@@ -1,0 +1,25 @@
+.App {
+  margin: 0 auto;
+  max-width: 1440px;
+  overflow: hidden;
+}
+
+@media(max-width: 1540px) {
+  .App {
+      padding: 0 50px;
+  }
+}
+
+@media(max-width: 1050px) {
+  body {
+      font-size: 18px;
+  }
+}
+
+
+@media(max-width: 550px) {
+  .App {
+      padding: 0 30px;
+  }
+}
+

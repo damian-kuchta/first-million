@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Aplikacja Pierwszy Milion - sprawdź swoje zarobki na sekundę, minutę oraz godzinę! Kiedy zarobisz swój pierwszy milion?">
+    <meta name="keywords" lang="pl" content="konwerter zarobków, jak długo do pierwszego miliona, zarobki na sekundę, zarobki na minutę, zarobki na godzinę">
+    <meta name="keywords" lang="en" content="salary converter, how long to earn first million, money per second, money per minute, money per hour">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="conent-language" content="pl">
+    <title>Pierwszy Milion</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Khand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="site-wrap">
+    <header class="header">
+        <img class="header__logo header__logo--hidden" src="./images/money_clock.png" alt="">
+        <a href="index.html" class="header__link"><h1 class="header__title">Pierwszy milion</h1></a>
+        <img class="header__logo" src="./images/money_clock.png" alt="logo-clock">
+    </header>
+    <main class="content-wrap">
+        <section class="initial-page none">
+            <p class="initial-page__info">Aplikacja "PIERWSZY MILION" pozwala na obliczenie zarobków na sekundę, minutę, godzinę oraz dzień.</p>
+            <p class="initial-page__info">Wskazuje również przybliżony czas potrzebny do zarobienia MILIONA.</p>
+            <div class="initial-page__controls-wrap">
+                <img class="initial-page__img" src="./images/person_tree.png" alt="">
+                <button class="initial-page__btn btn">Przejdź dalej!</button>
+            </div>
+        </section>
+        <section class="user-data-wrap none">
+            <form class="user-data-form form" action="">
+                <div class="form__input-wrap">
+                    <label class="form__label" for="salary">Pensja:</label>
+                    <input required class="form__input" type="number" id="salary">
+                </div>
+                <div class="form__input-wrap">
+                    <label class="form__label" for="working-days">Dni robocze/miesiąc:</label>
+                    <select class="form__select" name="" id="working-days">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option selected value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                </div>
+                <div class="form__input-wrap">
+                    <label class="form__label" for="working-hours">Godziny robocze/dzień:</label>
+                    <select class="form__select" name="" id="working-hours">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option selected value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                    </select>
+                </div>
+                <button type="submit" class="form__btn btn">Oblicz!</button>
+            </form>
+            <aside class="user-img-wrap">
+                <img class="user-img-wrap__img" src="./images/person_clock.png" alt="Person on clock">
+            </aside>
+        </section>
+        <section class="result-page-wrap">
+            <div class="result-info">
+                <p class="result-info__list-title">Zarabiasz:</p>
+                <ul class="result-info__list">
+                    <li class="result-info__list-item result-info__list-item--1">- <span class="result-info__per-day">1000</span> zł. na dzień.</li>
+                    <li class="result-info__list-item result-info__list-item--2">- <span class="result-info__per-hour">1000</span> zł. na godzinę.</li>
+                    <li class="result-info__list-item result-info__list-item--3">- <span class="result-info__per-minute">1000</span> zł. na minutę.</li>
+                    <li class="result-info__list-item result-info__list-item--4">- <span class="result-info__per-second">1000</span> zł. na sekundę.</li>
+                </ul>
+                <p class="result-info__first-million">Swój pierwszy milion zarobisz <span class="result-info__first-million-date">27.10.2031</span> r.</p>
+            </div>
+            <div class="result-controls">
+                <div class="result-controls__img-wrap"><img class="result-controls__img" src="./images/result-img.png" alt=""></div>
+                <div class="result-controls__btn-wrap"  data-html2canvas-ignore>
+                    <button class="result-controls__btn result-controls__btn--black btn" disabled>Pobierz PNG</button>
+                    <button class="result-controls__btn result-controls__btn--close btn">Zamknij!</button>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" data-html2canvas-ignore>
+            <p class="footer__author">created by Damian Kuchta</p>
+            <a class="footer__github-link" href="https://github.com/damian-kuchta/"><img class="footer__github-logo" src="./images/GitHub-Mark-Light-120px-plus.png" alt="Github logo"></a>
+        </footer>
+    </main>
+</div>
+<script src="./js/index.js"></script>
+</body>
+</html>

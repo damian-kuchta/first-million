@@ -1,0 +1,13 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer__author {
+    font-size: 16px;
+}

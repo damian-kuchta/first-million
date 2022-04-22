@@ -1,0 +1,30 @@
+.initial-page {
+    width: 550px;
+  }
+  
+  .initial-page__info {
+    margin-bottom: 30px;
+  }
+  
+  .initial-page__lower-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .initial-page__img {
+    width: 50%;
+  }
+  
+  @media (max-width: 1050px) {
+    .initial-page {
+      width: 400px;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .initial-page {
+      width: 300px;
+    }
+  }
+  

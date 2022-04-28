@@ -7,7 +7,7 @@ const GitHubLink = (props) => {
       <img
         className={classes['github-logo']}
         src={gitHubImg}
-        alt="GitHub logo image"
+        alt="GitHub logo"
       />
     </a>
   );

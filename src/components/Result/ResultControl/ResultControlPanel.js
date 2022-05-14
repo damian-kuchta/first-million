@@ -2,8 +2,15 @@ import resultImg from '../../../assets/img/result-img.png';
 import classes from './ResultControlPanel.module.css';
 import Button from '../../UI/Button';
 import html2canvas from "html2canvas";
+import { useState, useEffect } from 'react';
 
 const ResultControlPanel = (props) => {
+
+  const [itemsAreAnimated, animateItems] = useState(false);
+
+  useEffect(() => {
+    animateItems(true);
+  }, []);
 
   const appViewStateHandler = () => {
     props.showResult(false);
@@ -26,12 +33,11 @@ const ResultControlPanel = (props) => {
     });
 });
 
-
   return (
     <div className={classes['result-controls']}>
       <div className={classes['result-controls__img-wrap']}>
         <img
-        className={classes['result-controls__img']}
+        className={`${classes['result-controls__img']} ${itemsAreAnimated && classes["active"]}`}
           src={resultImg}
           alt="Result - moneys"
         />
